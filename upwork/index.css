@@ -1,0 +1,26 @@
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: orange;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.separator-double_arrow {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(3518%)
+    hue-rotate(0deg) brightness(104%) contrast(98%);
+}
